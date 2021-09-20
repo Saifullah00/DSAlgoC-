@@ -5,6 +5,7 @@ struct node {
     int data;
     node* next;
 };
+// Linlked List Traversal
 void LinlkedListTraversal(struct node *t)
 {   
     while(t != NULL)
@@ -14,6 +15,7 @@ void LinlkedListTraversal(struct node *t)
     }
 
 }
+// Insertion of element At the First of list
 struct node* InsertionAtFirst(struct node *head, int data)
 {
     node* IAF = new node();
@@ -23,6 +25,7 @@ struct node* InsertionAtFirst(struct node *head, int data)
     return IAF;
 
 }
+// Insertion of element At the End of List
 struct node* InsertionAtEnd(struct node *head, int data)
 {
     node* IAE = new node();
@@ -36,6 +39,7 @@ struct node* InsertionAtEnd(struct node *head, int data)
     IAE->next = NULL;
     return head;
 }
+// Insertion of element At the given Index 
 struct node* InsertionAtIndex(struct node* head, int data, int index)
 {
     node *IAI = new node();
@@ -52,6 +56,7 @@ struct node* InsertionAtIndex(struct node* head, int data, int index)
     return head;
     
 }
+// Insertion of element At the given Node of List
 struct node* InsertionAtNode(struct node* head, struct node *prevNode, int data)
 {
     node* IAN = new node();
@@ -70,7 +75,7 @@ int main()
     node* temp2 = new node();
     node* temp3 = new node();
 
-
+    // Declartion of elements in List
     (*head).data = 1;
     (*head).next = temp1;
     temp1-> data = 2;     // (*temp1).data = 2; // both are same
